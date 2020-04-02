@@ -1,0 +1,2 @@
+bases:
+- ../../../profiles/production.baremetal/01_cluster-mods
