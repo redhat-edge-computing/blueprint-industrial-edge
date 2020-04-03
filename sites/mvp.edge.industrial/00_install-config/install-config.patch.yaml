@@ -15,22 +15,22 @@ platform:
         role: master
         bmc:
           address: ipmi://10.19.111.39
+          credentialsName: ipmi
         bootMACAddress: a4:bf:01:51:44:81
-        credentialsName: ipmi
         hardwareProfile: default
       - name: master-1
         role: master
         bmc:
           address: ipmi://10.19.111.41
+          credentialsName: ipmi
         bootMACAddress: a4:bf:01:51:0f:ae
-        credentialsName: ipmi
         hardwareProfile: default
       - name: master-2
         role: master
         bmc:
           address: ipmi://10.19.111.43
+          credentialsName: ipmi
         bootMACAddress: a4:bf:01:51:78:a5
-        credentialsName: ipmi
         hardwareProfile: default
 pullSecret: 'PULL_SECRET'
 sshKey: |
