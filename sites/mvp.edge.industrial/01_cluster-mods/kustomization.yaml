@@ -1,2 +1,6 @@
 bases:
 - ../../../profiles/production.baremetal/01_cluster-mods
+
+resources:
+- openshift/99-ifcfg-ens786f1-master.yaml
+- openshift/99-ifcfg-eno2-master.yaml

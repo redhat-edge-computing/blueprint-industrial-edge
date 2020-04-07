@@ -3,12 +3,12 @@ baseDomain: edge.industrial
 compute:
 - hyperthreading: Enabled
   name: worker
-  platform: {}
   replicas: 0
 controlPlane:
   hyperthreading: Enabled
   name: master
-  platform: {}
+  platform:
+    baremetal: {}
   replicas: 3
 kind: InstallConfig
 metadata:

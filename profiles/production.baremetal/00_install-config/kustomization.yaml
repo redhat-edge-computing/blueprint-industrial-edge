@@ -3,4 +3,3 @@ bases:
 
 patches:
 - install-config.patch.yaml
-

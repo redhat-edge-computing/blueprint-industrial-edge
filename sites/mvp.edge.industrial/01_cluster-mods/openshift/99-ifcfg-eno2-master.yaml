@@ -1,0 +1,18 @@
+---
+apiVersion: machineconfiguration.openshift.io/v1
+kind: MachineConfig
+metadata:
+  labels:
+    machineconfiguration.openshift.io/role: master
+  name: 99-ifcfg-eno2-master
+spec:
+  config:
+    ignition:
+      version: 2.2.0
+    storage:
+      files:
+      - contents:
+          source: data:text/plain;charset=utf-8;base64,REVWSUNFPWVubzIKQk9PVFBST1RPPWRoY3AKT05CT09UPXllcwpUWVBFPUV0aGVybmV0CklQVjZJTklUPW5vCklQVjRfRE5TX1BSSU9SSVRZPTEKREVGUk9VVEU9bm8K
+        filesystem: root
+        mode: 0644
+        path: /etc/sysconfig/network-scripts/ifcfg-eno2

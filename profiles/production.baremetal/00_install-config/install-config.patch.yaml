@@ -3,4 +3,4 @@ kind: InstallConfig
 metadata:
   name: cluster
 platform:
-  none: {}
+  baremetal:
