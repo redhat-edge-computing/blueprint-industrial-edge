@@ -9,17 +9,15 @@ platform:
     ingressVIP: 10.1.1.5
     dnsVIP: 10.1.1.3
     provisioningBridge: provisioning
-    bootstrapOSImage: http://172.22.0.1:8080/rhcos-43.81.202003111353.0-qemu.x86_64.qcow2.gz?sha256=bee078cfef57f51d11dcdc7211185e5e85016e044081f3aec9b42637ebd05fec
-    clusterOSImage: http://172.22.0.1:8080/rhcos-43.81.202003111353.0-openstack.x86_64.qcow2.gz?sha256=8f17baa5564450eea4d3b6f817df3df58af7c3294583be62de615663c0ec55a5
     externalBridge: baremetal
     hosts:
       - name: master-0
         role: master
         bmc:
           address: ipmi://10.19.111.39
+          credentialsName: ipmi
           username: root
           password: calvin
-          credentialsName: ipmi
         bootMACAddress: a4:bf:01:51:44:81
         hardwareProfile: default
       - name: master-1
