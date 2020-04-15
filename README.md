@@ -17,7 +17,7 @@ This folder will contain the basic settings for the site, including the base blu
 
 ```
 bases:
-- git::https://github.com/redhat-edge-computing/basic-industrial-blueprint.git//profiles/production.baremetal/00_install-config
+- git::https://github.com/redhat-edge-computing/blueprint-industrial-edge.git//profiles/production.baremetal/00_install-config
 
 patches:
 - install-config.patch.yaml
