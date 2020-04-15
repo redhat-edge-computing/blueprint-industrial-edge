@@ -62,9 +62,28 @@ This repository contains a base blueprint, various profiles and two sites: one a
 
 ## knictl
 
-As part of the Akraino KNI project, a helper tool was developed in order to be able to render these blueprints into something the `openshift-install` binary can accept as input. It is based in `kustomize`, a well adopted tool part of the Kubernetes ecosystem. The user can leverage all the potential of kustomize in order to create overlays, generate new objects and make very complex blueprints. `knictl` will use the requirements.yaml file located in the profile blueprint to download required binaries, and then render the manifests. 
+As part of the Akraino KNI project, a helper tool was developed in order to be able to render these blueprints into something the `openshift-install` binary can accept as input. It is based in `kustomize`, a well adopted tool part of the Kubernetes ecosystem. The user can leverage all the potential of kustomize in order to create overlays, generate new objects and make very complex blueprints. `knictl` will use the requirements.yaml file located in the profile blueprint to download required binaries, and then render the manifests.
 
-You can find the steps to deploy the defined sites here:
+`knictl` tool is not available as a binary, so the user will have to compile it following the next easy steps. We assume that the Golang runtime is already installed in your own machine (Linux):
 
-- [Core Openshift cluster running on GCP](sites/core-edge-industrial.gcp.devcluster.openshift.com/README.md)
+```
+cd $GOPATH/src
+mkdir -p gerrit.akraino.org/kni/
+cd gerrit.akraino.org/kni/
+git clone "https://gerrit.akraino.org/r/kni/installer"
+cd installer
+make build
+```
+
+You will see the binary `knictl` on that very same folder. It is mandatory to keep `knictl` within that path for the moment since we are using ad-hoc kustomize plugins made for this project. As recommendation, yo can create an alias to point to the binary. 
+
+Create a $HOME/.kni folder and copy the following files:
+
+- id_rsa.pub → needs to contain the public key that you want to use to access your nodes
+- pull-secret.json → needs to contain the pull secret previously copied
+
+You can find the steps to deploy the following defined sites here:
+
+- [Staging Openshift cluster running on GCP](sites/staging-edge.gcp.devcluster.openshift.com/README.md)
+- [Staging Openshift cluster running on AWS](sites/staging-edge.devcluster.openshift.com/README.md)
 - [Edge Openshift baremetal cluster](sites/mvp.edge.industrial/README.md)
