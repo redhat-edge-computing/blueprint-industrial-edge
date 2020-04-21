@@ -1,2 +1,5 @@
 bases:
 - ../../../profiles/production.gcp/02_cluster-addons
+
+patches:
+- 00_acm-registration/acm-name-config.patch.yaml
