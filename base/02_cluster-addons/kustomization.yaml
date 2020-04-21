@@ -1,1 +1,12 @@
 resources:
+- 00_acm-registration/00_endpoint-crd.yaml
+- 00_acm-registration/01_namespace.yaml
+- 00_acm-registration/02_service-account.yaml
+- 00_acm-registration/03_cluster-role-binding.yaml
+- 00_acm-registration/04_pull-secret.yaml
+- 00_acm-registration/05_klusterlet-secret.yaml
+- 00_acm-registration/06_endpoint-operator.yaml
+- 00_acm-registration/07_endpoint.yaml
+
+transformers:
+  - site-config.yaml
