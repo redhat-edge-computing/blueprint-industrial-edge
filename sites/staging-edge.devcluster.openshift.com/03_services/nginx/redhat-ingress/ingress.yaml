@@ -1,0 +1,12 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: nginx-virtual-host-ingress-green
+spec:
+  rules:
+  - host: redhat-mynginx.apps.aws1-hive.dev06.red-chesterfield.com
+    http:
+      paths:
+      - backend:
+          serviceName: redhat-nginx-service
+          servicePort: 8080

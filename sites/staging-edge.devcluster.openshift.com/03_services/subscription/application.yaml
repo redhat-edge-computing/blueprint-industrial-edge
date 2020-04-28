@@ -1,0 +1,16 @@
+---
+    apiVersion: app.k8s.io/v1beta1
+    kind: Application
+    metadata:
+      name: nginx-redhat
+      namespace: nginx-redhat
+    spec:
+      selector:
+        matchExpressions:
+        - key: app
+          operator: In
+          values:
+          - nginx-deployment
+      componentKinds:
+      - group: app.ibm.com/v1alpha1
+        kind: Subscription

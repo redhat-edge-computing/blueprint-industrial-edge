@@ -1,0 +1,8 @@
+resources:
+- namespace.yaml
+#- secret.yaml
+- channel.yaml
+- placementrule.yaml
+- subscription-nginx-ingress-redhat.yaml
+- subscription-nginx-redhat.yaml
+- application.yaml

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: redhat-nginx-service
+spec:
+  selector:
+    app: nginx
+  ports:
+    - name: http
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
