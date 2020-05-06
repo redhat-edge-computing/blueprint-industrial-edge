@@ -16,4 +16,10 @@ If everything goes well, the command will get out some instructions to deploy th
 
 `$HOME/.kni/staging-edge.gcp.devcluster.openshift.com/requirements/openshift-install create cluster --dir=$HOME/.kni/staging-edge.gcp.devcluster.openshift.com/final_manifests --log-level debug`
 
-Wait until the deployment is completed, and you will information about console endpoint, kubeadmin password and kubeconfig path. 
+Wait until the deployment is completed, and you will information about console endpoint, kubeadmin password and kubeconfig path.
+
+If you have manifests that you want to deploy as Day 2 operations located in any of the 02_cluster-addons or 03_services directories, you can deploy them running the following command:
+
+`knictl apply_workloads staging-edge.gcp.devcluster.openshift.com`
+
+This is basically running kustomize to build and render all the manifests enabling alpha plugins, and apply them via oc/kubectl.
