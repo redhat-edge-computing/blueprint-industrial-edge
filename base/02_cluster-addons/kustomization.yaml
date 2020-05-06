@@ -7,6 +7,7 @@ resources:
 - 00_acm-registration/05_klusterlet-secret.yaml
 - 00_acm-registration/06_endpoint-operator.yaml
 - 00_acm-registration/07_endpoint.yaml
+ - 01_subscriptions-operator/00_pull-secret.yaml
 - 01_subscriptions-operator/06_clusterrole.yaml
 - 01_subscriptions-operator/07_clusterrole_binding.yaml
 - 01_subscriptions-operator/01_apps.open-cluster-management.io_channel_crd.yaml
