@@ -25,12 +25,13 @@ spec:
             fieldRef:
               fieldPath: metadata.name
         - name: IMAGE_TAG_POSTFIX
-          value: -SNAPSHOT-2020-03-31-02-16-43
-        image: quay.io/open-cluster-management/endpoint-operator:1.0.0-SNAPSHOT-2020-03-31-02-16-43
+        - name: USE_SHA_MANIFEST
+          value: "true"
+        image: registry.redhat.io/rhacm1-tech-preview/endpoint-rhel8-operator@sha256:970fb1bb2f481d82d171464803d21c1ceed8f9034889fd74d8f5a9b433a8216a
         imagePullPolicy: Always
         name: endpoint-operator
         resources: {}
       imagePullSecrets:
-      - name: multiclusterhub-operator-pull-secret
+      - name: acm-pull-secret
       serviceAccountName: endpoint-operator
 status: {}

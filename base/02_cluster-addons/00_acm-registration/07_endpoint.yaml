@@ -19,8 +19,7 @@ spec:
   connectionManager: {}
   iamPolicyController:
     enabled: true
-  imagePullSecret: multiclusterhub-operator-pull-secret
-  imageRegistry: quay.io/open-cluster-management
+  imagePullSecret: acm-pull-secret
   policyController:
     enabled: true
   searchCollector:
