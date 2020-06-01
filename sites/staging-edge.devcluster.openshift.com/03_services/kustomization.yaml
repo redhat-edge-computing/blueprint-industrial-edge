@@ -1,3 +1,3 @@
 bases:
-- ../../../profiles/production.gcp/03_services
+- ../../../profiles/production.aws/03_services
 - subscription
