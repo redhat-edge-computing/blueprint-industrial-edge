@@ -1,2 +1,7 @@
 bases:
 - ../../../profiles/production.baremetal/03_services
+
+resources:
+- manuela-edge/namespace.yaml
+- manuela-edge/channel-sensors.yaml
+- manuela-edge/subscription-sensors.yaml
