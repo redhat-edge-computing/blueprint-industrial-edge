@@ -7,17 +7,17 @@ resources:
 - 00_acm-registration/05_klusterlet-secret.yaml
 - 00_acm-registration/06_endpoint-operator.yaml
 - 00_acm-registration/07_endpoint.yaml
-- 01_subscriptions-operator/00_pull-secret.yaml
-- 01_subscriptions-operator/06_clusterrole.yaml
-- 01_subscriptions-operator/07_clusterrole_binding.yaml
-- 01_subscriptions-operator/01_apps.open-cluster-management.io_channel_crd.yaml
-- 01_subscriptions-operator/02_apps.open-cluster-management.io_subscriptions_crd.yaml
-- 01_subscriptions-operator/03_apps.open-cluster-management.io_helmrelease_crd.yaml
-- 01_subscriptions-operator/04_apps.open-cluster-management.io_deployable_crd.yaml
-- 01_subscriptions-operator/09_service.yaml
-- 01_subscriptions-operator/08_service_account.yaml
-- 01_subscriptions-operator/10_operator.yaml
-- 01_subscriptions-operator/05_namespace.yaml
+  #- 01_subscriptions-operator/00_pull-secret.yaml
+  #- 01_subscriptions-operator/06_clusterrole.yaml
+  #- 01_subscriptions-operator/07_clusterrole_binding.yaml
+  #- 01_subscriptions-operator/01_apps.open-cluster-management.io_channel_crd.yaml
+  #- 01_subscriptions-operator/02_apps.open-cluster-management.io_subscriptions_crd.yaml
+  #- 01_subscriptions-operator/03_apps.open-cluster-management.io_helmrelease_crd.yaml
+  #- 01_subscriptions-operator/04_apps.open-cluster-management.io_deployable_crd.yaml
+  #- 01_subscriptions-operator/09_service.yaml
+  #- 01_subscriptions-operator/08_service_account.yaml
+  #- 01_subscriptions-operator/10_operator.yaml
+  #- 01_subscriptions-operator/05_namespace.yaml
 
 
 transformers:
