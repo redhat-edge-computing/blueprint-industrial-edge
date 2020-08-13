@@ -1,0 +1,13 @@
+resources:
+ - 00_klusterlet-crd.yaml
+ - 03_klusterlet-role.yaml
+ - 04_cluster-role.yaml
+ - 05_role-bindings.yaml
+ - 01_namespace.yaml
+ - 06_hub-config.yaml
+ - 02_service-account.yaml
+ - 07-deployment.yaml
+ - 08-klusterlet.yaml
+
+transformers:
+  - site-config.yaml
