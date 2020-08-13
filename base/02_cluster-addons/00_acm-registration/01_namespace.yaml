@@ -1,7 +1,4 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  creationTimestamp: null
-  name: multicluster-endpoint
-spec: {}
-status: {}
+  name: open-cluster-management-agent
