@@ -1,8 +1,6 @@
-apiVersion: multicloud.ibm.com/v1beta1
-kind: Endpoint
+apiVersion: operator.open-cluster-management.io/v1
+kind: Klusterlet
 metadata:
-  name: endpoint
-  namespace: multicluster-endpoint
+  name: klusterlet
 spec:
   clusterName: staging-gcp
-  clusterNamespace: staging-gcp
