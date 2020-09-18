@@ -1,2 +1,5 @@
 bases:
 - ../../../profiles/production.gcp/03_services
+
+resources:
+- argocd-gitops-factory/argocd-staging-gcp-factorydatacenter.yaml
