@@ -3,3 +3,4 @@ bases:
 
 resources:
 - argocd-gitops-factory/argocd-staging-gcp-factorydatacenter.yaml
+- argocd-gitops-factory/argocd-staging-gcp-linedataserver.yaml
