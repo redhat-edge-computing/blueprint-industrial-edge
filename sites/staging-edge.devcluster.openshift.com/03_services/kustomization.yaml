@@ -1,3 +1,7 @@
 bases:
 - ../../../profiles/production.aws/03_services
-  #- subscription
+
+resources:
+- argocd-gitops-factory/argocd-staging-aws-factorydatacenter.yaml
+- argocd-gitops-factory/argocd-staging-aws-linedataserver.yaml
+
